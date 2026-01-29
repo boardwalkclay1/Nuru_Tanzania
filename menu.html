@@ -1,39 +1,118 @@
-<div id="food-list" class="menu-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Menu – Tanzanian Kitchen</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="loader.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
 
-  <div class="card meal" data-name="Ugali na Maharage" data-price="8">
-    <h3>Ugali na Maharage</h3>
-    <p>Classic maize meal with slow-cooked beans.</p>
-    <span class="price">$8</span>
-  </div>
-
-  <div class="card meal" data-name="Chipsi Mayai" data-price="7">
-    <h3>Chipsi Mayai</h3>
-    <p>Fried potatoes folded into an egg omelette.</p>
-    <span class="price">$7</span>
-  </div>
-
-  <div class="card meal" data-name="Pilau ya Nyama" data-price="10">
-    <h3>Pilau ya Nyama</h3>
-    <p>Spiced rice cooked with tender beef.</p>
-    <span class="price">$10</span>
-  </div>
-
-  <div class="card meal" data-name="Nyama Choma" data-price="11">
-    <h3>Nyama Choma</h3>
-    <p>Charcoal-grilled meat with kachumbari.</p>
-    <span class="price">$11</span>
-  </div>
-
-  <div class="card meal" data-name="Samaki wa Kupaka" data-price="12">
-    <h3>Samaki wa Kupaka</h3>
-    <p>Grilled fish coated in coconut sauce.</p>
-    <span class="price">$12</span>
-  </div>
-
-  <div class="card meal" data-name="Mandazi" data-price="4">
-    <h3>Mandazi</h3>
-    <p>Soft, slightly sweet fried dough.</p>
-    <span class="price">$4</span>
-  </div>
-
+<div id="loader" class="loader-overlay">
+  <div class="pot"><div class="spoon"></div></div>
+  <div class="loader-text">Stirring something delicious...</div>
 </div>
+
+<header>
+  <h1>Tanzanian Kitchen</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Food</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="order.html">Order</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Main Meals</h2>
+  <div class="menu-grid">
+
+    <div class="card meal" data-name="Ugali na Maharage" data-price="8">
+      <h3>Ugali na Maharage</h3>
+      <p>Maize meal with slow-cooked beans.</p>
+      <span class="price">$8</span>
+    </div>
+
+    <div class="card meal" data-name="Chipsi Mayai" data-price="7">
+      <h3>Chipsi Mayai</h3>
+      <p>Potato omelette served with kachumbari.</p>
+      <span class="price">$7</span>
+    </div>
+
+    <div class="card meal" data-name="Pilau ya Nyama" data-price="10">
+      <h3>Pilau ya Nyama</h3>
+      <p>Spiced rice cooked with beef.</p>
+      <span class="price">$10</span>
+    </div>
+
+    <div class="card meal" data-name="Nyama Choma" data-price="11">
+      <h3>Nyama Choma</h3>
+      <p>Grilled meat with kachumbari.</p>
+      <span class="price">$11</span>
+    </div>
+
+    <div class="card meal" data-name="Samaki wa Kupaka" data-price="12">
+      <h3>Samaki wa Kupaka</h3>
+      <p>Grilled fish in coconut sauce.</p>
+      <span class="price">$12</span>
+    </div>
+
+  </div>
+
+  <h2>Sweets</h2>
+  <div class="menu-grid">
+
+    <div class="card meal" data-name="Mandazi" data-price="4">
+      <h3>Mandazi</h3>
+      <p>Sweet fried dough.</p>
+      <span class="price">$4</span>
+    </div>
+
+    <div class="card meal" data-name="Vitumbua" data-price="5">
+      <h3>Vitumbua</h3>
+      <p>Sweet coconut rice cakes.</p>
+      <span class="price">$5</span>
+    </div>
+
+    <div class="card meal" data-name="Kashata" data-price="3">
+      <h3>Kashata</h3>
+      <p>Peanut or coconut brittle.</p>
+      <span class="price">$3</span>
+    </div>
+
+  </div>
+
+  <h2>Breads (Sweet & Savory Fillings)</h2>
+  <div class="menu-grid">
+
+    <div class="card meal" data-name="Chapati with Beef Filling" data-price="6">
+      <h3>Chapati – Beef Filling</h3>
+      <p>Soft chapati stuffed with seasoned beef.</p>
+      <span class="price">$6</span>
+    </div>
+
+    <div class="card meal" data-name="Chapati with Veggie Filling" data-price="5">
+      <h3>Chapati – Veggie Filling</h3>
+      <p>Chapati filled with sautéed vegetables.</p>
+      <span class="price">$5</span>
+    </div>
+
+    <div class="card meal" data-name="Chapati with Nutella" data-price="5">
+      <h3>Chapati – Nutella</h3>
+      <p>Sweet chapati filled with Nutella.</p>
+      <span class="price">$5</span>
+    </div>
+
+    <div class="card meal" data-name="Mkate wa Sinia" data-price="6">
+      <h3>Mkate wa Sinia</h3>
+      <p>Sweet coconut baked bread.</p>
+      <span class="price">$6</span>
+    </div>
+
+  </div>
+
+</main>
+
+</body>
+</html>
