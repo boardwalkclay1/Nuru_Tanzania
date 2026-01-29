@@ -1,34 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Food Menu – Tanzanian Kitchen</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="loader.js" defer></script>
-  <script src="app.js" defer></script>
-</head>
-<body>
+<div id="food-list" class="menu-grid">
 
-<div id="loader" class="loader-overlay">
-  <div class="pot"><div class="spoon"></div></div>
-  <div class="loader-text">Stirring something delicious...</div>
+  <div class="card meal" data-name="Ugali na Maharage" data-price="8">
+    <h3>Ugali na Maharage</h3>
+    <p>Classic maize meal with slow-cooked beans.</p>
+    <span class="price">$8</span>
+  </div>
+
+  <div class="card meal" data-name="Chipsi Mayai" data-price="7">
+    <h3>Chipsi Mayai</h3>
+    <p>Fried potatoes folded into an egg omelette.</p>
+    <span class="price">$7</span>
+  </div>
+
+  <div class="card meal" data-name="Pilau ya Nyama" data-price="10">
+    <h3>Pilau ya Nyama</h3>
+    <p>Spiced rice cooked with tender beef.</p>
+    <span class="price">$10</span>
+  </div>
+
+  <div class="card meal" data-name="Nyama Choma" data-price="11">
+    <h3>Nyama Choma</h3>
+    <p>Charcoal-grilled meat with kachumbari.</p>
+    <span class="price">$11</span>
+  </div>
+
+  <div class="card meal" data-name="Samaki wa Kupaka" data-price="12">
+    <h3>Samaki wa Kupaka</h3>
+    <p>Grilled fish coated in coconut sauce.</p>
+    <span class="price">$12</span>
+  </div>
+
+  <div class="card meal" data-name="Mandazi" data-price="4">
+    <h3>Mandazi</h3>
+    <p>Soft, slightly sweet fried dough.</p>
+    <span class="price">$4</span>
+  </div>
+
 </div>
-
-<header>
-  <h1>Tanzanian Kitchen</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html" class="active">Food</a>
-    <a href="drinks.html">Drinks</a>
-    <a href="order.html">Order</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <h2>Food Menu</h2>
-  <div id="food-list" class="menu-grid"></div>
-</main>
-
-</body>
-</html>
