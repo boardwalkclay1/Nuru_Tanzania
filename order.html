@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order – Tanzanian Kitchen</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="loader.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<div id="loader" class="loader-overlay">
+  <div class="pot"><div class="spoon"></div></div>
+  <div class="loader-text">Stirring something delicious...</div>
+</div>
+
+<header>
+  <h1>Tanzanian Kitchen</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Food</a>
+    <a href="drinks.html">Drinks</a>
+    <a href="order.html" class="active">Order</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Place Your Order</h2>
+
+  <div class="card">
+    <div id="order-summary" class="order-summary">
+      No items selected yet.
+    </div>
+
+    <form id="order-form">
+      <label>Your Name</label>
+      <input id="customer-name" required>
+
+      <label>Your Email</label>
+      <input id="customer-email" type="email" required>
+
+      <label>Phone (optional)</label>
+      <input id="customer-phone">
+
+      <label>Special Notes</label>
+      <textarea id="special-notes"></textarea>
+
+      <button class="btn" type="submit">Send Order</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h3>PayPal Payment</h3>
+    <a class="btn secondary" href="#">Pay with PayPal</a>
+  </div>
+
+</main>
+
+</body>
+</html>
