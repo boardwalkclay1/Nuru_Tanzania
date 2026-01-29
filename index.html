@@ -5,16 +5,22 @@
   <title>Tanzanian Kitchen – Home</title>
   <link rel="stylesheet" href="styles.css">
   <script src="loader.js" defer></script>
+  <script src="theme.js" defer></script>
 </head>
 <body>
 
+<!-- LOADER -->
 <div id="loader" class="loader-overlay">
-  <div class="pot"><div class="spoon"></div></div>
+  <div class="pot">
+    <div class="spoon"></div>
+  </div>
   <div class="loader-text">Stirring something delicious...</div>
 </div>
 
+<!-- HEADER -->
 <header>
   <h1>Tanzanian Kitchen</h1>
+
   <nav>
     <a href="index.html" class="active">Home</a>
     <a href="menu.html">Food</a>
@@ -22,15 +28,87 @@
     <a href="order.html">Order</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <!-- DARK MODE TOGGLE -->
+  <button id="theme-toggle" class="theme-toggle">🌙</button>
 </header>
 
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h2 class="hero-title">Taste the Heart of Tanzania</h2>
+    <p class="hero-subtitle">Fresh. Authentic. Made with love.</p>
+    <a class="btn hero-btn" href="menu.html">Explore Menu</a>
+  </div>
+</section>
+
 <main>
-  <section class="card">
-    <h2>Karibu! Welcome</h2>
-    <p>Authentic Tanzanian dishes cooked with love. Explore our menu and place your order.</p>
-    <a class="btn" href="menu.html">View Food Menu</a>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <h2 class="section-title">What Makes Us Special</h2>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
+        <h3>Authentic Recipes</h3>
+        <p>Traditional Tanzanian meals prepared the right way.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🍽️</div>
+        <h3>Fresh Ingredients</h3>
+        <p>Every dish is made from scratch with love.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🚚</div>
+        <h3>Fast Pickup</h3>
+        <p>Order online and pick up your food quickly.</p>
+      </div>
+
+    </div>
   </section>
+
+  <!-- POPULAR DISHES PREVIEW -->
+  <section class="popular">
+    <h2 class="section-title">Popular Dishes</h2>
+
+    <div class="popular-grid">
+
+      <div class="popular-card">
+        <h3>Nyama Choma</h3>
+        <p>Charcoal-grilled perfection.</p>
+      </div>
+
+      <div class="popular-card">
+        <h3>Pilau ya Nyama</h3>
+        <p>Spiced rice cooked with beef.</p>
+      </div>
+
+      <div class="popular-card">
+        <h3>Mandazi</h3>
+        <p>Sweet, soft, and unforgettable.</p>
+      </div>
+
+    </div>
+
+    <a class="btn" href="menu.html">See Full Menu</a>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Order?</h2>
+    <p>Your next delicious meal is just a click away.</p>
+    <a class="btn" href="order.html">Place Order</a>
+  </section>
+
 </main>
+
+<footer>
+  <p>© 2026 Tanzanian Kitchen. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
