@@ -16,56 +16,43 @@ html, body {
 }
 
 /* ============================================================
-   LOADER — FIXED, CLEAN, WORKING
-   ============================================================ */
-#loader {
-  position: fixed;
-  inset: 0;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999999;
-  opacity: 1;
-  transition: opacity .25s ease-out;
-}
-
-#loader .spinner {
-  width: 70px;
-  height: 70px;
-  border: 8px solid #d0d0d0;
-  border-top-color: #000;
-  border-radius: 50%;
-  animation: spin .8s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-/* ============================================================
-   HEADER
+   HEADER — FIXED FOR LOGO FIT
    ============================================================ */
 header {
   width: 100%;
   padding: 20px;
   background: #111;
   color: #fff;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO IMAGE */
+.logo-img {
+  height: 80px;        /* perfect size */
+  width: auto;         /* keeps proportions */
+  object-fit: contain; /* prevents stretching */
+  border-radius: 10px; /* optional clean look */
+}
+
+/* LOGO LINK */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 /* ============================================================
    NAVIGATION
    ============================================================ */
 nav {
-  width: 100%;
-  background: #222;
-  padding: 10px 0;
   display: flex;
-  justify-content: center;
   gap: 20px;
+  background: #222;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 nav a {
@@ -79,6 +66,60 @@ nav a {
 
 nav a:hover {
   background: #444;
+}
+
+/* ============================================================
+   HERO SECTION — BACKGROUND IMAGE SUPPORT
+   ============================================================ */
+.hero {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background .2s;
+}
+
+.hero-btn:hover {
+  background: #333;
 }
 
 /* ============================================================
@@ -101,7 +142,72 @@ p {
 }
 
 /* ============================================================
-   BUTTONS — BUBBLE STYLE (YOUR PREFERENCE)
+   FEATURE GRID
+   ============================================================ */
+.feature-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* ============================================================
+   POPULAR GRID
+   ============================================================ */
+.popular-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.popular-card {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta .btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background .2s;
+}
+
+.cta .btn:hover {
+  background: #333;
+}
+
+/* ============================================================
+   BUTTONS — BUBBLE STYLE
    ============================================================ */
 button {
   background: #000;
@@ -119,7 +225,7 @@ button:hover {
 }
 
 /* ============================================================
-   INPUTS — BUBBLE STYLE (YOUR PREFERENCE)
+   INPUTS — BUBBLE STYLE
    ============================================================ */
 input, select {
   width: 100%;
@@ -145,4 +251,31 @@ footer {
   color: #fff;
   text-align: center;
   margin-top: 40px;
+}
+
+/* ============================================================
+   MOBILE FIXES
+   ============================================================ */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo-img {
+    height: 65px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
 }
