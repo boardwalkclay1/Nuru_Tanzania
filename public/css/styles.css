@@ -79,6 +79,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+
   background-image: url('/img/Tanzi-logo.jpg');
   background-size: cover;
   background-position: center;
@@ -86,25 +87,41 @@ nav a:hover {
   background-attachment: fixed;
 }
 
+/* REMOVE ANY OVERLAY */
+.hero-overlay {
+  background: none !important;
+}
+
+/* HERO CONTENT */
 .hero-content {
   text-align: center;
   color: #fff;
-  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
 }
 
+/* TITLE — BLACK OUTLINE + GOLD FILL + ORANGE GLOW */
 .hero-title {
   font-size: 46px;
   font-weight: 700;
-  color: #f4c542;
+  color: #f4c542; /* gold */
   margin-bottom: 10px;
+
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+     0 0 12px #e67e22; /* orange glow */
 }
 
+/* SUBTITLE */
 .hero-subtitle {
   font-size: 22px;
   color: #fff;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #000;
 }
 
+/* BUTTON */
 .hero-btn {
   background: #e67e22;
   color: #fff;
