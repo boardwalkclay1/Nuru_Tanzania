@@ -1,0 +1,435 @@
+{
+  "business_name": "Tanzanian Kitchen",
+  "owner": "Clayvonte",
+  "location": "Atlanta, GA",
+  "concept": "Authentic Tanzanian food: catering, meal prep, packaged foods, and cultural experiences.",
+  "legal_structure": {
+    "entity_type": "LLC (recommended)",
+    "home_food_rules": {
+      "state": "Georgia",
+      "cottage_food_allowed": [
+        "Baked goods (mandazi, breads, cakes, cookies)",
+        "Dry mixes (spice blends, flour mixes)",
+        "Candies",
+        "Jams and jellies",
+        "Granola and nuts",
+        "Dried herbs and teas",
+        "Shelf-stable snacks"
+      ],
+      "cottage_food_not_allowed": [
+        "Hot meals",
+        "Meat dishes",
+        "Rice plates",
+        "Beans and stews",
+        "Dairy-based foods",
+        "Anything requiring refrigeration or temperature control"
+      ],
+      "label_requirements": [
+        "Business name",
+        "Business address",
+        "Ingredients list",
+        "Allergens",
+        "Statement: \"Made in a home kitchen not inspected by the Georgia Department of Agriculture\""
+      ]
+    },
+    "commercial_kitchen_requirement": {
+      "description": "All hot meals and potentially hazardous foods must be prepared in a licensed commercial kitchen.",
+      "allowed_sales_from_home_if_prepared_in_kitchen": [
+        "Hot Tanzanian plates (pilau, biriyani, mishkaki, chapati, beans, stews)",
+        "Catering trays",
+        "Meal prep containers",
+        "Delivery orders"
+      ]
+    },
+    "tax_compliance": {
+      "requirements": [
+        "Register business with state",
+        "Collect and remit sales tax where required",
+        "Report income to IRS",
+        "Keep records of expenses and revenue"
+      ]
+    },
+    "zoning_considerations": {
+      "rules": [
+        "Home-based business allowed but cannot operate like a full restaurant from the house.",
+        "Limit customer traffic to home.",
+        "No large exterior signage.",
+        "Respect noise and parking limits."
+      ]
+    }
+  },
+  "commercial_kitchen_plan": {
+    "goal": "Rent a licensed commercial kitchen in Atlanta to legally cook hot Tanzanian meals.",
+    "options": [
+      {
+        "name": "PREP Kitchens",
+        "type": "Shared-use commercial kitchen",
+        "location": "3300 Marjan Dr, Atlanta, GA 30340",
+        "phone": "404-383-5388",
+        "estimated_cost_per_hour": "20-45 USD",
+        "notes": "24-hour access, designed for food entrepreneurs."
+      },
+      {
+        "name": "Atlanta Shared Kitchen",
+        "type": "Shared-use commercial kitchen",
+        "location": "6899 Peachtree Industrial Blvd D, Peachtree Corners, GA 30092",
+        "phone": "404-942-8555",
+        "pricing_structure": {
+          "membership_per_month": 375,
+          "prep_table_per_hour": 10,
+          "stove_per_hour": 25,
+          "mixer_per_hour": 35
+        },
+        "notes": "Membership-based, flexible equipment pricing."
+      },
+      {
+        "name": "Leaven Kitchen",
+        "type": "Shared-use commercial kitchen",
+        "location": "215 Laredo Dr Ste 100, Decatur, GA 30030",
+        "phone": "404-946-5864",
+        "estimated_cost_per_hour": "25-40 USD",
+        "notes": "Good for small catering and meal prep."
+      }
+    ],
+    "estimated_monthly_cost": {
+      "hours_per_week": "4-6",
+      "hourly_range_usd": "20-45",
+      "estimated_weekly_cost_usd": "80-270",
+      "estimated_monthly_cost_usd": "320-1080"
+    }
+  },
+  "revenue_streams": [
+    {
+      "name": "Catering",
+      "description": "Full-service Tanzanian catering for events.",
+      "target_customers": [
+        "Weddings",
+        "Baby showers",
+        "Corporate lunches",
+        "Birthday parties",
+        "Graduation parties",
+        "Cultural events",
+        "Church events",
+        "Nonprofit fundraisers",
+        "Festivals",
+        "Private parties"
+      ],
+      "pricing": {
+        "per_person_usd": "18-22",
+        "typical_event_revenue_usd": "500-5000+"
+      },
+      "menu_examples": [
+        "Pilau with beef or chicken",
+        "Biriyani",
+        "Mishkaki (skewers)",
+        "Chapati",
+        "Coconut beans",
+        "Mango dessert",
+        "Mandazi"
+      ],
+      "notes": "High-margin, booked in advance, predictable income."
+    },
+    {
+      "name": "Meal Prep Subscription Service",
+      "description": "Weekly Tanzanian meal prep delivered or picked up.",
+      "plans": [
+        {
+          "name": "Individual 5-meal plan",
+          "price_usd": 75
+        },
+        {
+          "name": "Individual 10-meal plan",
+          "price_usd": 140
+        },
+        {
+          "name": "Family plan",
+          "price_usd": 200
+        }
+      ],
+      "menu_examples": [
+        "Pilau bowls",
+        "Biriyani bowls",
+        "Mishkaki bowls",
+        "Chapati wraps",
+        "Veggie bowls"
+      ],
+      "notes": "Recurring revenue, ideal for busy professionals and families."
+    },
+    {
+      "name": "Corporate Lunch Contracts",
+      "description": "Regular lunch catering for offices and work sites.",
+      "target_customers": [
+        "Tech companies",
+        "Warehouses",
+        "Construction crews",
+        "Hospitals",
+        "Schools",
+        "Government offices"
+      ],
+      "pricing": {
+        "per_lunch_event_usd": "300-1200+"
+      },
+      "offer_examples": [
+        "Tanzanian Lunch Fridays",
+        "International Lunch Day",
+        "Employee Appreciation Meals"
+      ],
+      "notes": "High-volume, recurring contracts possible."
+    },
+    {
+      "name": "Event Vendor Booths",
+      "description": "Food booth at festivals, markets, and events.",
+      "products": [
+        "Pilau bowls",
+        "Mishkaki skewers",
+        "Mandazi",
+        "Vitumbua",
+        "Mango juice",
+        "Sugarcane juice"
+      ],
+      "pricing": {
+        "daily_revenue_usd": "1200-4000",
+        "daily_profit_usd": "400-1200"
+      },
+      "notes": "Great for brand exposure and cash flow."
+    },
+    {
+      "name": "Private Chef Services",
+      "description": "In-home or on-location private chef experiences.",
+      "pricing": {
+        "per_dinner_usd": "150-400",
+        "group_size": "2-6 people"
+      },
+      "menu_examples": [
+        "Full Tanzanian dinner: pilau, biriyani, mishkaki, chapati, beans, dessert"
+      ],
+      "notes": "High-end, high-margin, low volume."
+    },
+    {
+      "name": "Cooking Classes",
+      "description": "Teach Tanzanian cooking in-person or online.",
+      "formats": [
+        "In-person group classes",
+        "Online Zoom classes"
+      ],
+      "pricing": {
+        "in_person_per_person_usd": "45-75",
+        "online_per_person_usd": "20-40"
+      },
+      "class_examples": [
+        "Pilau masterclass",
+        "Mandazi workshop",
+        "Chapati and curry night",
+        "Biriyani deep dive"
+      ],
+      "notes": "Build brand, content, and extra income."
+    },
+    {
+      "name": "Packaged Cottage Foods",
+      "description": "Shelf-stable Tanzanian products made at home under Cottage Food Law.",
+      "products": [
+        "Mandazi (packaged)",
+        "Vitumbua dry mix",
+        "Pilau spice blend",
+        "Chapati flour mix",
+        "Tea blends",
+        "Dried snacks"
+      ],
+      "sales_channels": [
+        "Farmers markets",
+        "Online store",
+        "Instagram/DM orders",
+        "Local African stores",
+        "Pop-up events"
+      ],
+      "profit_margin_percent": "70-85",
+      "notes": "Legal from home, scalable, low overhead."
+    },
+    {
+      "name": "Bottled Drinks",
+      "description": "Cultural drinks bottled and sold.",
+      "products": [
+        "Mango juice",
+        "Sugarcane juice",
+        "Ginger tea",
+        "Hibiscus tea"
+      ],
+      "pricing": {
+        "per_bottle_usd": "5-8"
+      },
+      "notes": "Great for events, markets, and add-ons to catering."
+    },
+    {
+      "name": "Delivery via Apps",
+      "description": "Sell hot meals through delivery platforms (from commercial kitchen).",
+      "platforms": [
+        "DoorDash",
+        "Uber Eats",
+        "Grubhub"
+      ],
+      "estimated_weekly_revenue_usd": "300-1500",
+      "notes": "Requires consistent kitchen access and menu."
+    },
+    {
+      "name": "Weekly Family Trays",
+      "description": "Large trays for families and gatherings.",
+      "products": [
+        {
+          "name": "Pilau tray",
+          "price_usd": 45
+        },
+        {
+          "name": "Biriyani tray",
+          "price_usd": 55
+        },
+        {
+          "name": "Mishkaki tray",
+          "price_usd": 60
+        },
+        {
+          "name": "Chapati tray",
+          "price_usd": 25
+        }
+      ],
+      "notes": "Perfect for weekends and holidays."
+    },
+    {
+      "name": "Holiday Catering Specials",
+      "description": "Special menus for major holidays and celebrations.",
+      "events": [
+        "Thanksgiving",
+        "Christmas",
+        "New Year’s Eve",
+        "Eid",
+        "Graduation season"
+      ],
+      "estimated_revenue_per_holiday_usd": "2000-10000",
+      "notes": "High demand, high revenue windows."
+    },
+    {
+      "name": "Food Content Creation",
+      "description": "Create videos, recipes, and content for brands or your own channels.",
+      "income_examples": {
+        "per_video_usd": "150-600",
+        "per_brand_deal_usd": "500-2000"
+      },
+      "notes": "Build long-term brand and passive income potential."
+    },
+    {
+      "name": "Sauces and Marinades",
+      "description": "Bottle and sell Tanzanian sauces.",
+      "products": [
+        "Pilau sauce",
+        "Mishkaki marinade",
+        "Coconut curry base",
+        "Hot pepper sauce"
+      ],
+      "pricing": {
+        "per_bottle_usd": "8-12"
+      },
+      "notes": "Great upsell for catering and meal prep customers."
+    },
+    {
+      "name": "Subscription Food Boxes",
+      "description": "Curated Tanzanian food boxes.",
+      "products": [
+        "Taste of Tanzania Box: mandazi mix, pilau spice, chapati flour, tea blend"
+      ],
+      "pricing": {
+        "per_box_usd": "35-55"
+      },
+      "notes": "Recurring subscription potential."
+    },
+    {
+      "name": "Pop-up Restaurant Nights",
+      "description": "Temporary restaurant experiences in rented spaces.",
+      "pricing": {
+        "per_plate_usd": "25-40",
+        "plates_per_night": "40-80",
+        "estimated_profit_per_night_usd": "800-2400"
+      },
+      "notes": "Great for hype, content, and testing full restaurant concept."
+    },
+    {
+      "name": "Wedding Food Packages",
+      "description": "Full wedding catering with Tanzanian menu.",
+      "pricing": {
+        "per_wedding_usd": "1500-8000"
+      },
+      "notes": "High-ticket, requires strong planning and presentation."
+    },
+    {
+      "name": "Corporate Snack Boxes",
+      "description": "Tanzanian snack boxes for offices.",
+      "products": [
+        "Mandazi",
+        "Vitumbua",
+        "Tea blends",
+        "Spice mixes"
+      ],
+      "pricing": {
+        "per_box_usd": "150-400"
+      },
+      "notes": "Pairs well with corporate catering relationships."
+    },
+    {
+      "name": "Frozen Meals",
+      "description": "Pre-cooked Tanzanian meals sold frozen.",
+      "products": [
+        "Frozen pilau",
+        "Frozen biriyani",
+        "Frozen mishkaki",
+        "Frozen coconut beans"
+      ],
+      "pricing": {
+        "per_meal_usd": "10-14"
+      },
+      "notes": "Convenience product for repeat customers."
+    },
+    {
+      "name": "Food Truck Partnerships",
+      "description": "Partner with existing food trucks to sell Tanzanian dishes.",
+      "model": "You cook, they sell, split profits.",
+      "notes": "Lower overhead than owning a truck."
+    },
+    {
+      "name": "Wholesale to African Stores",
+      "description": "Sell packaged goods to local African and international markets.",
+      "products": [
+        "Mandazi",
+        "Vitumbua",
+        "Spice blends",
+        "Sauces"
+      ],
+      "pricing": {
+        "per_batch_usd": "50-200"
+      },
+      "notes": "Build recurring wholesale relationships."
+    }
+  ],
+  "marketing_plan": {
+    "channels": [
+      "Instagram (photos, reels, stories)",
+      "TikTok (short cooking videos)",
+      "Facebook (local groups, events)",
+      "Google Business Profile",
+      "Flyers at African stores and churches",
+      "Partnerships with event planners and venues"
+    ],
+    "brand_positioning": "Authentic Tanzanian food in Atlanta — bold flavors, cultural experience, and reliable catering.",
+    "key_messages": [
+      "Authentic Tanzanian flavors.",
+      "Perfect for events, offices, and families.",
+      "Cooked in a licensed commercial kitchen.",
+      "Options for catering, meal prep, and packaged foods."
+    ]
+  },
+  "next_steps": [
+    "Choose and sign up with a commercial kitchen (PREP, Atlanta Shared Kitchen, or Leaven).",
+    "Finalize core catering menu and pricing.",
+    "Set up LLC and sales tax registration.",
+    "Design labels for cottage foods (mandazi, spice blends, etc.).",
+    "Launch Instagram and Google Business Profile.",
+    "Start with one main revenue stream (catering + meal prep) and add others over time."
+  ]
+}
