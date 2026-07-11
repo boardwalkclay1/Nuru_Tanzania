@@ -9,14 +9,14 @@
 
   <!-- Social Preview -->
   <meta property="og:title" content="Tanzanian Kitchen – Admin Dashboard">
-  <meta property="og:description" content="View earnings, staff payouts, and order summaries.">
+  <meta property="og:description" content="Full control center for Tanzanian Kitchen operations.">
   <meta property="og:image" content="/img/tanzi-logo.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tanzizanzi.com/admin.html">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Tanzanian Kitchen – Admin Dashboard">
-  <meta name="twitter:description" content="View earnings, staff payouts, and order summaries.">
+  <meta name="twitter:description" content="Full control center for Tanzanian Kitchen operations.">
   <meta name="twitter:image" content="/img/tanzi-logo.png">
 
   <!-- Font -->
@@ -27,6 +27,36 @@
 
   <!-- App JS -->
   <script src="/js/app.js" defer></script>
+
+  <style>
+    .admin-card {
+      background: #fff3d0;
+      color: #5a381e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      margin-bottom: 25px;
+    }
+    .dropdown {
+      background: #e67e22;
+      color: white;
+      padding: 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .dropdown-content {
+      display: none;
+      background: #fff3d0;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      color: #5a381e;
+      white-space: pre-wrap;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
 
@@ -42,6 +72,8 @@
     <a href="drinks.html">Drinks</a>
     <a href="order.html">Order</a>
     <a href="admin.html" class="active">Admin</a>
+    <a href="staff.html">Staff</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
@@ -54,38 +86,102 @@
 ">
   <div class="hero-content">
     <h2 class="hero-title">Admin Dashboard</h2>
-    <p class="hero-subtitle">Your earnings, staff payouts, and order history.</p>
+    <p class="hero-subtitle">Full control center for your business.</p>
   </div>
 </section>
 
-<!-- ADMIN CONTENT -->
+<!-- MAIN CONTENT -->
 <main>
-  <section style="text-align:center; margin-bottom:40px;">
-    <h2>Your Earnings</h2>
 
-    <p style="font-size:22px; margin-top:10px;">
-      <strong>Total Revenue:</strong> <span id="admin-total">$0.00</span>
-    </p>
-
-    <p style="font-size:22px; margin-top:10px;">
-      <strong>Your 10% Cut:</strong> <span id="admin-cut">$0.00</span>
-    </p>
-
-    <p style="font-size:22px; margin-top:10px;">
-      <strong>Staff 90%:</strong> <span id="admin-staff">$0.00</span>
-    </p>
+  <!-- BUSINESS PLAN DROPDOWN -->
+  <section class="admin-card">
+    <h2>Business Plan</h2>
+    <div class="dropdown" onclick="togglePlan()">View Full Business Plan</div>
+    <div id="plan-viewer" class="dropdown-content">Loading...</div>
   </section>
 
-  <section>
-    <h2 style="text-align:center;">Order History</h2>
-    <div id="admin-orders" class="popular-grid" style="margin-top:20px;"></div>
+  <!-- QUICK FINANCIAL OVERVIEW -->
+  <section class="admin-card">
+    <h2>Financial Overview</h2>
+    <p><strong>Total Revenue:</strong> <span id="admin-total">$0.00</span></p>
+    <p><strong>Your 10% Cut:</strong> <span id="admin-cut">$0.00</span></p>
+    <p><strong>Staff 90%:</strong> <span id="admin-staff">$0.00</span></p>
   </section>
+
+  <!-- CUSTOMER ORDERS -->
+  <section class="admin-card">
+    <h2>Customer Orders</h2>
+    <div id="admin-orders" class="popular-grid"></div>
+  </section>
+
+  <!-- CATERING MANAGEMENT -->
+  <section class="admin-card">
+    <h2>Catering Management</h2>
+    <p>Track catering clients, pricing, and upcoming events.</p>
+    <div id="catering-card"></div>
+  </section>
+
+  <!-- MEAL PREP MANAGEMENT -->
+  <section class="admin-card">
+    <h2>Meal Prep Subscriptions</h2>
+    <p>Manage weekly subscribers and meal counts.</p>
+    <div id="mealprep-card"></div>
+  </section>
+
+  <!-- PACKAGED GOODS -->
+  <section class="admin-card">
+    <h2>Packaged Goods</h2>
+    <p>Manage mandazi, spice blends, teas, and cottage foods.</p>
+    <div id="packaged-card"></div>
+  </section>
+
+  <!-- CORPORATE CONTRACTS -->
+  <section class="admin-card">
+    <h2>Corporate Contracts</h2>
+    <p>Track office lunches and recurring business clients.</p>
+    <div id="corporate-card"></div>
+  </section>
+
+  <!-- EVENTS & VENDOR BOOTHS -->
+  <section class="admin-card">
+    <h2>Events & Vendor Booths</h2>
+    <p>Track festivals, pop-ups, and vendor revenue.</p>
+    <div id="events-card"></div>
+  </section>
+
+  <!-- STAFF MANAGEMENT -->
+  <section class="admin-card">
+    <h2>Staff Management</h2>
+    <p>Track staff payouts and assignments.</p>
+    <div id="staff-card"></div>
+  </section>
+
 </main>
 
 <!-- FOOTER -->
 <footer class="site-footer">
   <p>© 2026 Tanzanian Kitchen. All Rights Reserved.</p>
 </footer>
+
+<script>
+  // Load JSON Business Plan
+  async function loadPlan() {
+    try {
+      const res = await fetch('/json/plan.json');
+      const data = await res.json();
+      document.getElementById('plan-viewer').textContent = JSON.stringify(data, null, 2);
+    } catch (err) {
+      document.getElementById('plan-viewer').textContent = "Failed to load plan.json";
+    }
+  }
+
+  function togglePlan() {
+    const viewer = document.getElementById('plan-viewer');
+    viewer.style.display = viewer.style.display === "block" ? "none" : "block";
+  }
+
+  loadPlan();
+</script>
 
 </body>
 </html>
