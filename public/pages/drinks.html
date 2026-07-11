@@ -3,69 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <title>Drinks – Tanzanian Kitchen</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/img/tanzi-logo.png">
+
+  <!-- Social Preview -->
+  <meta property="og:title" content="Tanzanian Kitchen – Drinks">
+  <meta property="og:description" content="Authentic Tanzanian drinks made fresh with love.">
+  <meta property="og:image" content="/img/tanzi-logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tanzizanzi.com/drinks.html">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tanzanian Kitchen – Drinks">
+  <meta name="twitter:description" content="Authentic Tanzanian drinks made fresh with love.">
+  <meta name="twitter:image" content="/img/tanzi-logo.png">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- App JS -->
   <script src="/js/app.js" defer></script>
 </head>
 <body>
 
-<header>
-  <h1>Tanzanian Kitchen</h1>
-  <nav>
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="logo-link">
+    <img src="/img/tanzi-gold.jpg" alt="Tanzanian Kitchen Logo" class="logo-img">
+  </a>
+
+  <nav class="nav">
     <a href="index.html">Home</a>
     <a href="menu.html">Food</a>
     <a href="drinks.html" class="active">Drinks</a>
     <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<main>
-  <h2>Drinks</h2>
-  <div class="menu-grid">
-
-    <div class="card meal" data-name="Chai ya Tangawizi" data-price="3">
-      <h3>Chai ya Tangawizi</h3>
-      <p>Hot ginger tea.</p>
-      <span class="price">$3</span>
-    </div>
-
-    <div class="card meal" data-name="Chai ya Maziwa" data-price="3">
-      <h3>Chai ya Maziwa</h3>
-      <p>Milk tea simmered with spices.</p>
-      <span class="price">$3</span>
-    </div>
-
-    <div class="card meal" data-name="Uji wa Lishe" data-price="4">
-      <h3>Uji wa Lishe</h3>
-      <p>Nutritious porridge drink.</p>
-      <span class="price">$4</span>
-    </div>
-
-    <div class="card meal" data-name="Juisi ya Miwa" data-price="4">
-      <h3>Juisi ya Miwa</h3>
-      <p>Fresh sugarcane juice.</p>
-      <span class="price">$4</span>
-    </div>
-
-    <div class="card meal" data-name="Juisi ya Embe" data-price="4">
-      <h3>Juisi ya Embe</h3>
-      <p>Fresh mango juice.</p>
-      <span class="price">$4</span>
-    </div>
-
-    <div class="card meal" data-name="Soda Baridi" data-price="2">
-      <h3>Soda Baridi</h3>
-      <p>Cold soda (Coke, Fanta, Sprite).</p>
-      <span class="price">$2</span>
-    </div>
-
-    <div class="card meal" data-name="Maji ya Chupa" data-price="2">
-      <h3>Maji ya Chupa</h3>
-      <p>Bottled water.</p>
-      <span class="price">$2</span>
-    </div>
-
+<!-- HERO -->
+<section class="hero" style="
+  background-image: url('/img/tanzi-logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+  <div class="hero-content">
+    <h2 class="hero-title">Drinks Menu</h2>
+    <p class="hero-subtitle">Fresh. Authentic. Made with love.</p>
   </div>
+</section>
+
+<!-- DRINKS LIST -->
+<main>
+  <section>
+    <h2 style="text-align:center; margin-bottom:20px;">Our Drinks</h2>
+
+    <div class="popular-grid">
+
+      <div class="popular-card meal" data-name="Chai ya Tangawizi" data-price="3">
+        <h3>Chai ya Tangawizi</h3>
+        <p>Hot ginger tea.</p>
+        <span class="price">$3</span>
+      </div>
+
+      <div class="popular-card meal" data-name="Chai ya Maziwa" data-price="3">
+        <h3>Chai ya Maziwa</h3>
+        <p>Milk tea simmered with spices.</p>
+        <span class="price">$3</span>
+      </div>
+
+      <div class="popular-card meal" data-name="Uji wa Lishe" data-price="4">
+        <h3>Uji wa Lishe</h3>
+        <p>Nutritious porridge drink.</p>
+        <span class="price">$4</span>
+      </div>
+
+      <div class="popular-card meal" data-name="Juisi ya Miwa" data-price="4">
+        <h3>Juisi ya Miwa</h3>
+        <p>Fresh sugarcane juice.</p>
+        <span class="price">$4</span>
+      </div>
+
+      <div class="popular-card meal" data-name="Juisi ya Embe" data-price="4">
+        <h3>Juisi ya Embe</h3>
+        <p>Fresh mango juice.</p>
+        <span class="price">$4</span>
+      </div>
+
+      <div class="popular-card meal" data-name="Soda Baridi" data-price="2">
+        <h3>Soda Baridi</h3>
+        <p>Cold soda (Coke, Fanta, Sprite).</p>
+        <span class="price">$2</span>
+      </div>
+
+      <div class="popular-card meal" data-name="Maji ya Chupa" data-price="2">
+        <h3>Maji ya Chupa</h3>
+        <p>Bottled water.</p>
+        <span class="price">$2</span>
+      </div>
+
+    </div>
+  </section>
 </main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2026 Tanzanian Kitchen. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
