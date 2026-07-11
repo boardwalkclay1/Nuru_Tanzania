@@ -3,42 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Your Order – Tanzanian Kitchen</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/img/tanzi-logo.png">
+
+  <!-- Social Preview -->
+  <meta property="og:title" content="Tanzanian Kitchen – Order">
+  <meta property="og:description" content="Place your order for authentic Tanzanian food made fresh with love.">
+  <meta property="og:image" content="/img/tanzi-logo.png">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tanzanian Kitchen – Order">
+  <meta name="twitter:description" content="Place your order for authentic Tanzanian food made fresh with love.">
+  <meta name="twitter:image" content="/img/tanzi-logo.png">
+
   <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/app.js" defer></script>
 </head>
 <body>
 
-<header>
-  <h1>Tanzanian Kitchen</h1>
-  <nav>
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="logo-link">
+    <img src="/img/tanzi-gold.jpg" alt="Tanzanian Kitchen Logo" class="logo-img">
+  </a>
+
+  <nav class="nav">
     <a href="index.html">Home</a>
     <a href="menu.html">Food</a>
     <a href="drinks.html">Drinks</a>
     <a href="order.html" class="active">Order</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
+<!-- HERO -->
+<section class="hero" style="
+  background-image: url('/img/tanzi-logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+  <div class="hero-content">
+    <h2 class="hero-title">Your Order</h2>
+    <p class="hero-subtitle">Review your items and place your order.</p>
+  </div>
+</section>
+
+<!-- ORDER SECTION -->
 <main>
-  <h2>Your Order</h2>
+  <section>
+    <h2 style="text-align:center;">Order Summary</h2>
+    <div id="order-items" class="order-summary"></div>
+    <p style="text-align:center; font-size:22px; margin-top:10px;">
+      <strong>Total:</strong> <span id="order-total">$0.00</span>
+    </p>
+  </section>
 
-  <div id="order-summary" class="order-summary">Loading...</div>
+  <section style="margin-top:30px;">
+    <h2 style="text-align:center;">Your Details</h2>
 
-  <form id="order-form">
-    <label>Your Name</label>
-    <input id="customer-name" required>
+    <form id="order-form" style="max-width:600px; margin:auto;">
+      <label>Your Name</label>
+      <input id="customer-name" required>
 
-    <label>Your Email</label>
-    <input id="customer-email" type="email" required>
+      <label>Your Email</label>
+      <input id="customer-email" type="email" required>
 
-    <label>Phone (optional)</label>
-    <input id="customer-phone">
+      <label>Phone (optional)</label>
+      <input id="customer-phone">
 
-    <label>Notes</label>
-    <textarea id="special-notes"></textarea>
+      <label>Notes</label>
+      <textarea id="special-notes" style="width:100%; height:120px; border-radius:20px;"></textarea>
 
-    <button class="btn" type="submit">Send Order</button>
-  </form>
+      <button class="btn" type="submit" style="margin-top:20px;">Send Order</button>
+    </form>
+  </section>
 </main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2026 Tanzanian Kitchen. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
